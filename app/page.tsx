@@ -18,6 +18,7 @@ const ButtonSecondary = dynamic(() => import('@/shared/Button/ButtonSecondary'))
 const SectionClientSay = dynamic(() => import('@/components/SectionClientSay/SectionClientSay'));
 import { PRODUCTS, SPORT_PRODUCTS } from "@/data/data";
 import SectionMagazine5 from "@/app/blog/SectionMagazine5";
+
 import dynamic from "next/dynamic";
 
 export default function Home() {
