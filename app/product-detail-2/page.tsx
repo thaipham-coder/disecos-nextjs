@@ -1,13 +1,5 @@
 "use client";
 
-// Client Components:
-const SectionSliderProductCard = dynamic(() => import('@/components/SectionSliderProductCard'));
-const NcInputNumber = dynamic(() => import('@/components/NcInputNumber'));
-const LikeSaveBtns = dynamic(() => import('@/components/LikeSaveBtns'));
-const AccordionInfo = dynamic(() => import('@/components/AccordionInfo'));
-const ListingImageGallery = dynamic(() => import('@/components/listing-image-gallery/ListingImageGallery'));
-
-
 import React, { FC, useState } from "react";
 import {
   NoSymbolIcon,
@@ -24,15 +16,19 @@ import detail23JPG from "@/images/products/detail3-3.webp";
 import detail24JPG from "@/images/products/detail3-4.webp";
 import { PRODUCTS } from "@/data/data";
 import IconDiscount from "@/components/IconDiscount";
+import NcInputNumber from "@/components/NcInputNumber";
 import BagIcon from "@/components/BagIcon";
 import toast from "react-hot-toast";
 import { StarIcon } from "@heroicons/react/24/solid";
+import SectionSliderProductCard from "@/components/SectionSliderProductCard";
 import NotifyAddTocart from "@/components/NotifyAddTocart";
 import Image, { StaticImageData } from "next/image";
+import LikeSaveBtns from "@/components/LikeSaveBtns";
+import AccordionInfo from "@/components/AccordionInfo";
 import Policy from "../product-detail/Policy";
 import ModalViewAllReviews from "../product-detail/ModalViewAllReviews";
+import ListingImageGallery from "@/components/listing-image-gallery/ListingImageGallery";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import dynamic from "next/dynamic";
 
 const LIST_IMAGES_GALLERY_DEMO: (string | StaticImageData)[] = [
   detail21JPG,

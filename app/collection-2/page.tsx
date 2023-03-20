@@ -1,14 +1,9 @@
 import React, { FC } from "react";
-
-// Client Components:
-const SectionSliderCollections = dynamic(() => import('@/components/SectionSliderLargeProduct'));
-const SectionPromo1 = dynamic(() => import('@/components/SectionPromo1'));
-const SidebarFilters = dynamic(() => import('@/components/SidebarFilters'));
-
+import SectionSliderCollections from "@/components/SectionSliderLargeProduct";
+import SectionPromo1 from "@/components/SectionPromo1";
 import ProductCard from "@/components/ProductCard";
 import { PRODUCTS } from "@/data/data";
-
-import dynamic from "next/dynamic";
+import SidebarFilters from "@/components/SidebarFilters";
 
 const PageCollection2 = ({ }) => {
   return (

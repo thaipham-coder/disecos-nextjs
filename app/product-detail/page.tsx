@@ -1,15 +1,11 @@
 "use client";
 
-// Client Components:
-const LikeButton = dynamic(() => import('@/components/LikeButton'));
-const NcInputNumber = dynamic(() => import('@/components/NcInputNumber'));
-const SectionSliderProductCard = dynamic(() => import('@/components/SectionSliderProductCard'));
-const AccordionInfo = dynamic(() => import('@/components/AccordionInfo'));
-
 import React, { FC, useState } from "react";
 import ButtonPrimary from "@/shared/Button/ButtonPrimary";
+import LikeButton from "@/components/LikeButton";
 import { StarIcon } from "@heroicons/react/24/solid";
 import BagIcon from "@/components/BagIcon";
+import NcInputNumber from "@/components/NcInputNumber";
 import { PRODUCTS } from "@/data/data";
 import {
   NoSymbolIcon,
@@ -19,6 +15,7 @@ import {
 import IconDiscount from "@/components/IconDiscount";
 import Prices from "@/components/Prices";
 import toast from "react-hot-toast";
+import SectionSliderProductCard from "@/components/SectionSliderProductCard";
 import detail1JPG from "@/images/products/detail1.jpg";
 import detail2JPG from "@/images/products/detail2.jpg";
 import detail3JPG from "@/images/products/detail3.jpg";
@@ -29,8 +26,7 @@ import SectionPromo2 from "@/components/SectionPromo2";
 import ModalViewAllReviews from "./ModalViewAllReviews";
 import NotifyAddTocart from "@/components/NotifyAddTocart";
 import Image from "next/image";
-
-import dynamic from "next/dynamic";
+import AccordionInfo from "@/components/AccordionInfo";
 
 const LIST_IMAGES_DEMO = [detail1JPG, detail2JPG, detail3JPG];
 

@@ -1,16 +1,11 @@
 import React, { FC } from "react";
-
-// Client Components:
-const SectionSliderCollections = dynamic(() => import('@/components/SectionSliderLargeProduct'));
-const ProductCard = dynamic(() => import('@/components/ProductCard'));
-const TabFilters = dynamic(() => import('@/components/TabFilters'));
-
 import Pagination from "@/shared/Pagination/Pagination";
 import ButtonPrimary from "@/shared/Button/ButtonPrimary";
+import SectionSliderCollections from "@/components/SectionSliderLargeProduct";
 import SectionPromo1 from "@/components/SectionPromo1";
+import ProductCard from "@/components/ProductCard";
 import { PRODUCTS } from "@/data/data";
-
-import dynamic from "next/dynamic";
+import TabFilters from "@/components/TabFilters";
 
 const PageCollection = ({ }) => {
   return (

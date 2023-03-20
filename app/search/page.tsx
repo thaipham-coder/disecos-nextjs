@@ -1,18 +1,13 @@
 import React, { FC } from "react";
-
-// Client Components:
-const SectionSliderCollections = dynamic(() => import('@/components/SectionSliderLargeProduct'));
-const HeaderFilterSearchPage = dynamic(() => import('@/components/HeaderFilterSearchPage'));
-const ProductCard = dynamic(() => import('@/components/ProductCard'));
-
 import Pagination from "@/shared/Pagination/Pagination";
 import ButtonPrimary from "@/shared/Button/ButtonPrimary";
+import SectionSliderCollections from "@/components/SectionSliderLargeProduct";
 import SectionPromo1 from "@/components/SectionPromo1";
+import HeaderFilterSearchPage from "@/components/HeaderFilterSearchPage";
 import Input from "@/shared/Input/Input";
 import ButtonCircle from "@/shared/Button/ButtonCircle";
+import ProductCard from "@/components/ProductCard";
 import { PRODUCTS } from "@/data/data";
-
-import dynamic from "next/dynamic";
 
 const PageSearch = ({ }) => {
   return (

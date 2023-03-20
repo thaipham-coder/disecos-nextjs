@@ -1,25 +1,39 @@
 import React from "react";
+import SectionHowItWork from "@/components/SectionHowItWork/SectionHowItWork";
+import BackgroundSection from "@/components/BackgroundSection/BackgroundSection";
+import SectionPromo1 from "@/components/SectionPromo1";
+import SectionHero2 from "@/components/SectionHero/SectionHero2";
+import SectionSliderLargeProduct from "@/components/SectionSliderLargeProduct";
+import SectionSliderProductCard from "@/components/SectionSliderProductCard";
+import DiscoverMoreSlider from "@/components/DiscoverMoreSlider";
+import SectionGridMoreExplore from "@/components/SectionGridMoreExplore/SectionGridMoreExplore";
+import SectionPromo2 from "@/components/SectionPromo2";
+import SectionSliderCategories from "@/components/SectionSliderCategories/SectionSliderCategories";
+import SectionPromo3 from "@/components/SectionPromo3";
+import SectionClientSay from "@/components/SectionClientSay/SectionClientSay";
+import Heading from "@/components/Heading/Heading";
+import ButtonSecondary from "@/shared/Button/ButtonSecondary";
+import { PRODUCTS, SPORT_PRODUCTS } from "@/data/data";
+import SectionGridFeatureItems from "@/components/SectionGridFeatureItems";
+import SectionMagazine5 from "@/app/blog/SectionMagazine5";
 
 // Client Components:
-const SectionHero2 = dynamic(() => import('@/components/SectionHero/SectionHero2'));
-const DiscoverMoreSlider = dynamic(() => import('@/components/DiscoverMoreSlider'));
-const SectionSliderProductCard = dynamic(() => import('@/components/SectionSliderProductCard'));
-const SectionHowItWork = dynamic(() => import('@/components/SectionHowItWork/SectionHowItWork'));
-const SectionPromo1 = dynamic(() => import('@/components/SectionPromo1'));
-const BackgroundSection = dynamic(() => import('@/components/BackgroundSection/BackgroundSection'));
-const SectionGridMoreExplore = dynamic(() => import('@/components/SectionGridMoreExplore/SectionGridMoreExplore'));
-const SectionPromo2 = dynamic(() => import('@/components/SectionPromo2'));
-const SectionSliderLargeProduct = dynamic(() => import('@/components/SectionSliderLargeProduct'));
-const SectionSliderCategories = dynamic(() => import('@/components/SectionSliderCategories/SectionSliderCategories'));
-const SectionPromo3 = dynamic(() => import('@/components/SectionPromo3'));
-const SectionGridFeatureItems = dynamic(() => import('@/components/SectionGridFeatureItems'));
-const Heading = dynamic(() => import('@/components/Heading/Heading'));
-const SectionClientSay = dynamic(() => import('@/components/SectionClientSay/SectionClientSay'));
-import { PRODUCTS, SPORT_PRODUCTS } from "@/data/data";
-import SectionMagazine5 from "@/app/blog/SectionMagazine5";
-import ButtonSecondary from "@/shared/Button/ButtonSecondary";
+// const SectionHero2 = dynamic(() => import('@/components/SectionHero/SectionHero2'));
+// const DiscoverMoreSlider = dynamic(() => import('@/components/DiscoverMoreSlider'));
+// const SectionSliderProductCard = dynamic(() => import('@/components/SectionSliderProductCard'));
+// const SectionHowItWork = dynamic(() => import('@/components/SectionHowItWork/SectionHowItWork'));
+// const SectionPromo1 = dynamic(() => import('@/components/SectionPromo1'));
+// const BackgroundSection = dynamic(() => import('@/components/BackgroundSection/BackgroundSection'));
+// const SectionGridMoreExplore = dynamic(() => import('@/components/SectionGridMoreExplore/SectionGridMoreExplore'));
+// const SectionPromo2 = dynamic(() => import('@/components/SectionPromo2'));
+// const SectionSliderLargeProduct = dynamic(() => import('@/components/SectionSliderLargeProduct'));
+// const SectionSliderCategories = dynamic(() => import('@/components/SectionSliderCategories/SectionSliderCategories'));
+// const SectionPromo3 = dynamic(() => import('@/components/SectionPromo3'));
+// const SectionGridFeatureItems = dynamic(() => import('@/components/SectionGridFeatureItems'));
+// const Heading = dynamic(() => import('@/components/Heading/Heading'));
+// const SectionClientSay = dynamic(() => import('@/components/SectionClientSay/SectionClientSay'));
 
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
 export default function Home() {
   return (

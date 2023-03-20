@@ -1,16 +1,12 @@
-// Client Components:
-const BackgroundSection = dynamic(() => import('@/components/BackgroundSection/BackgroundSection'));
-const SectionClientSay = dynamic(() => import('@/components/SectionClientSay/SectionClientSay'));
-
-
 import rightImg from "@/images/hero-right1.png";
 import React, { FC } from "react";
 import SectionFounder from "./SectionFounder";
 import SectionStatistic from "./SectionStatistic";
 import BgGlassmorphism from "@/components/BgGlassmorphism/BgGlassmorphism";
+import BackgroundSection from "@/components/BackgroundSection/BackgroundSection";
 import SectionHero from "./SectionHero";
+import SectionClientSay from "@/components/SectionClientSay/SectionClientSay";
 import SectionPromo3 from "@/components/SectionPromo3";
-import dynamic from "next/dynamic";
 
 const PageAbout = ({ }) => {
   return (
