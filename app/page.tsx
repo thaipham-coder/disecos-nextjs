@@ -1,91 +1,80 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import React from "react";
 
-const inter = Inter({ subsets: ['latin'] })
+// Client Components:
+const SectionHero2 = dynamic(() => import('@/components/SectionHero/SectionHero2'));
+const DiscoverMoreSlider = dynamic(() => import('@/components/DiscoverMoreSlider'));
+const SectionSliderProductCard = dynamic(() => import('@/components/SectionSliderProductCard'));
+const SectionHowItWork = dynamic(() => import('@/components/SectionHowItWork/SectionHowItWork'));
+const SectionPromo1 = dynamic(() => import('@/components/SectionPromo1'));
+const BackgroundSection = dynamic(() => import('@/components/BackgroundSection/BackgroundSection'));
+const SectionGridMoreExplore = dynamic(() => import('@/components/SectionGridMoreExplore/SectionGridMoreExplore'));
+const SectionPromo2 = dynamic(() => import('@/components/SectionPromo2'));
+const SectionSliderLargeProduct = dynamic(() => import('@/components/SectionSliderLargeProduct'));
+const SectionSliderCategories = dynamic(() => import('@/components/SectionSliderCategories/SectionSliderCategories'));
+const SectionPromo3 = dynamic(() => import('@/components/SectionPromo3'));
+const SectionGridFeatureItems = dynamic(() => import('@/components/SectionGridFeatureItems'));
+const Heading = dynamic(() => import('@/components/Heading/Heading'));
+const ButtonSecondary = dynamic(() => import('@/shared/Button/ButtonSecondary'));
+const SectionClientSay = dynamic(() => import('@/components/SectionClientSay/SectionClientSay'));
+import { PRODUCTS, SPORT_PRODUCTS } from "@/data/data";
+import SectionMagazine5 from "@/app/blog/SectionMagazine5";
+import dynamic from "next/dynamic";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+      <div className="nc-PageHome relative overflow-hidden">
+        <SectionHero2 />
+        <div className="mt-24 lg:mt-32">
+          <DiscoverMoreSlider />
+        </div>
+        <div className="container relative space-y-24 my-24 lg:space-y-32 lg:my-32">
+          <SectionSliderProductCard
+            data={[
+              PRODUCTS[4],
+              SPORT_PRODUCTS[5],
+              PRODUCTS[7],
+              SPORT_PRODUCTS[1],
+              PRODUCTS[6],
+            ]}
+          />
+          <div className="py-24 lg:py-32 border-t border-b border-slate-200 dark:border-slate-700">
+            <SectionHowItWork />
+          </div>
+          <SectionPromo1 />
+          <div className="relative py-24 lg:py-32">
+            <BackgroundSection />
+            <SectionGridMoreExplore />
+          </div>
+          <SectionSliderProductCard
+            heading="Best Sellers"
+            subHeading="Best selling of the month"
+          />
+          <SectionPromo2 />
+
+          <SectionSliderLargeProduct cardStyle="style2" />
+
+          <SectionSliderCategories />
+
+          <SectionPromo3 />
+
+          <SectionGridFeatureItems />
+
+          <div className="relative py-24 lg:py-32">
+            <BackgroundSection />
+            <div>
+              <Heading rightDescText="From the Ciseco blog">
+                The latest news
+              </Heading>
+              <SectionMagazine5 />
+              <div className="flex mt-16 pb-16 justify-center">
+                <ButtonSecondary>Show all blog articles</ButtonSecondary>
+              </div>
+            </div>
+          </div>
+          <SectionClientSay />
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
