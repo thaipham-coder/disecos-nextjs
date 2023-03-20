@@ -4,6 +4,7 @@ import React, { FC } from "react";
 const SectionSliderCollections = dynamic(() => import('@/components/SectionSliderLargeProduct'));
 const ProductCard = dynamic(() => import('@/components/ProductCard'));
 const TabFilters = dynamic(() => import('@/components/TabFilters'));
+
 import Pagination from "@/shared/Pagination/Pagination";
 import ButtonPrimary from "@/shared/Button/ButtonPrimary";
 import SectionPromo1 from "@/components/SectionPromo1";

@@ -14,10 +14,10 @@ const SectionSliderCategories = dynamic(() => import('@/components/SectionSlider
 const SectionPromo3 = dynamic(() => import('@/components/SectionPromo3'));
 const SectionGridFeatureItems = dynamic(() => import('@/components/SectionGridFeatureItems'));
 const Heading = dynamic(() => import('@/components/Heading/Heading'));
-const ButtonSecondary = dynamic(() => import('@/shared/Button/ButtonSecondary'));
 const SectionClientSay = dynamic(() => import('@/components/SectionClientSay/SectionClientSay'));
 import { PRODUCTS, SPORT_PRODUCTS } from "@/data/data";
 import SectionMagazine5 from "@/app/blog/SectionMagazine5";
+import ButtonSecondary from "@/shared/Button/ButtonSecondary";
 
 import dynamic from "next/dynamic";
 
